@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+mainClassName = 'Assn3'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Assn3'
+    }
+}
+archivesBaseName = 'Assn3'
